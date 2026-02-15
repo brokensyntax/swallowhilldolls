@@ -1,0 +1,189 @@
+<html>
+<!-- index.html -->
+<head>
+<script language="JavaScript">
+
+
+
+<!--
+
+function imageSwap(ImageName, ImageSrc)
+
+{
+
+  var objStr,obj;
+
+  /*    imageSwap()    Changes the source of an image.    */
+
+  // Check to make sure that images are supported in the DocumentObjectModule.
+
+    if(document.images){
+
+    // Check to see whether you are using a name, number, or object
+
+    if (typeof(ImageName) == 'string') {
+
+      // This whole objStr nonesense is here solely to gain compatability
+
+      // with ie3 for the mac.
+
+      objStr = 'document.' + ImageName;
+
+      obj = eval(objStr);
+
+      obj.src = ImageSrc;
+
+    } else if ((typeof(ImageName) == 'object') && ImageName && ImageName.src) {
+
+      ImageName.src = ImageSrc;
+
+    }
+
+  }
+
+}
+
+// -->
+
+</script>
+<script language="JavaScript">
+
+<!--
+
+function init()
+
+{
+
+	WM_preloadImages('images/dollson.jpg','images/mouldson.jpg','images/ceramicson.jpg');
+
+}
+
+function WM_preloadImages() {
+
+/*
+
+WM_preloadImages()
+
+Loads images into the browser's cache for later use.
+
+Source: Webmonkey Code Library
+
+(http://www.hotwired.com/webmonkey/javascript/code_library/)
+
+Author: Nadav Savio
+
+Author Email: nadav@wired.com
+
+Usage: WM_preloadImages('image 1 URL', 'image 2 URL', 'image 3 URL', ...);
+
+*/
+
+  // Don't bother if there's no document.images
+
+  if (document.images) {
+
+    if (typeof(document.WM) == 'undefined'){
+
+      document.WM = new Object();
+
+    }
+
+    document.WM.loadedImages = new Array();
+
+    // Loop through all the arguments.
+
+    var argLength = WM_preloadImages.arguments.length;
+
+    for(arg=0;arg<argLength;arg++) {
+
+      // For each arg, create a new image.
+
+      document.WM.loadedImages[arg] = new Image();
+
+      // Then set the source of that image to the current argument.
+
+      document.WM.loadedImages[arg].src = WM_preloadImages.arguments[arg];
+
+    }
+
+  }
+
+}
+
+// -->
+
+</script>
+<title>Swallowhill Miniatures: Dolls, Ceramics &amp; Molds</title>
+<meta content="en-us" http-equiv="Content-Language"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Joy Parker,John Parker,Swallowhill,miniature dolls,
+dollhouse dolls,doll kits,1/12th scale dolls,porcelain dolls,doll molds,miniature molds,
+doll patterns,miniature knitting,knitting patterns,Sunday Dolls,Sue Atkinson,John Parker,
+Midland,Ontario,Canada,ceramics,miniature ceramics,plates,flower containers,containers,
+mini" name="description"/>
+</head>
+<body alink="#FFFFFF" background="http://swallowhilldolls.com/images/bg.jpg" bgcolor="#EAB8B4" link="#CA3C3C" onload="WM_preloadImages('images/dollson.jpg',
+'images/mouldson.jpg','images/ceramicson.jpg');" text="#795209" vlink="#CA3C3C">
+<p align="center">
+<img alt="Swallowhill Miniature Dolls, Ceramics and Molds" border="0" height="63" src="images/title-sm.jpg" width="541"/></p>
+<div align="center">
+<center>
+<table border="0" cellpadding="0" cellspacing="0">
+<!--- Row 1 --->
+<tr>
+<td colspan="2"><a href="indexjoy.htm" onmouseout="imageSwap('button1','images/dollsoff.jpg');" onmouseover="imageSwap('button1','images/dollson.jpg');">
+<img border="0" height="130" name="button1" src="images/dollsoff.jpg" width="225"/></a></td>
+</tr>
+<!--- Row 2 --->
+<tr>
+<td><a href="indexmolds.htm" onmouseout="imageSwap('button2','images/mouldsoff.jpg');" onmouseover="imageSwap('button2','images/mouldson.jpg');">
+<img border="0" height="140" name="button2" src="images/mouldsoff.jpg" width="90"/></a></td>
+<td><a href="ceramics/ceramicindex.htm" onmouseout="imageSwap('button3','images/ceramicsoff.jpg');" onmouseover="imageSwap('button3','images/ceramicson.jpg');">
+<img border="0" height="140" name="button3" src="images/ceramicsoff.jpg" width="135"/></a></td>
+</tr>
+</table></center>
+</div>
+<p align="center"><font face="Arial, Helvetica, Sans Serif" size="3"><b><i>Choose the
+
+section you wish to visit by moving your mouse over the lady, <br/>
+
+ then Click to
+
+Enter, or  </i></b></font></p>
+<p align="center"><font face="Arial, Helvetica, Sans Serif" size="3"><b><i>
+
+-------- use the links below -------</i>
+</b></font></p>
+<p align="center"><font face="Arial, Helvetica, Sans Serif" size="3"><b>
+<a href="indexjoy.htm">Dolls, Doll Kits, Patterns, Trims &amp; Projects</a>  
+
+-    </b><a href="indexmolds.htm"><b>Molds </b></a><b>     <a href="ceramics/ceramicindex.htm"> </a></b></font> </p>
+<p align="center"><a href="ceramics/ceramicindex.htm"><b><font face="Arial, Helvetica, Sans Serif" size="3">Miniature Ceramics &amp; Dishware</font></b></a></p>
+<p align="center"><img border="0" height="31" src="images/menubottom.jpg" width="150"/>
+</p>
+<p align="center"><font face="Arial, Helvetica, Sans Serif" size="3"><b><i>If
+you would like to be on our mailing list, please <a href="guest1.htm">Click Here</a></i></b></font>
+</p>
+<p align="center"><img border="0" height="31" src="images/menubottom.jpg" width="150"/>
+</p>
+<center>
+<table border="0" cellpadding="2" cellspacing="0">
+<tr>
+<td align="center"><a href="http://ring.miniature.net/cgi-bin/home.pl?ringid=Artisan" target="_top"><img align="center" alt="Miniature Net Ring" border="0" height="200" hspace="0" src="artisan/ring.jpg" width="212"/></a></td>
+<td align="center" valign="middle">
+<p align="center"><a href="http://ring.miniature.net/cgi-bin/home.pl?ringid=Artisan">Ring of Miniature Artisans</a></p>
+<p align="center">Want to join a<br>
+<a href="http://ring.miniature.net" target="_top">Miniature Network Ring</a>? 
+        <p><small>[<a href="http://ring.miniature.net/cgi-bin/next.pl?ringid=Artisan;siteid=porcelain" target="_top">Next</a>] [<a href="http://ring.miniature.net/cgi-bin/prev.pl?ringid=Artisan;siteid=porcelain" target="_top">Previous</a>] [<a href="http://ring.miniature.net/cgi-bin/rand.pl?ringid=Artisan;siteid=porcelain" target="_top">Random</a>] [<a href="http://ring.miniature.net/cgi-bin/list.pl?ringid=Artisan;siteid=porcelain" target="_top">List</a>]</small></p>
+</br></p></td>
+</tr>
+</table>
+<p align="center"><b>This is a photo of Joy and John taken at the MET show,
+October 13/14, 2001<br/>
+Gosh! I guess mother and son look alike!</b>
+</p>
+<p align="center"><img border="0" height="345" src="projectimage/john&amp;joy.jpg" width="425"/>
+</p>
+<center>
+<p align="center"><a href="http://gerdesdesign.com/"><img alt="Graphic Design by Anne Gerdes" border="0" height="117" src="images/byanne.jpg" width="132"/></a></p>
+</center></center></body></html>
